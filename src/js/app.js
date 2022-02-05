@@ -1,7 +1,10 @@
 // TODO: write your code here
 import sum from './basic';
-/*import * as css from '../src/css';
-import * as js from '../src/js';*/
+
+import Game, {GameSavingData, readGameSaving as loadGame, writeGameSaving as saveGame} from './game';
+
+const game = new Game();
+game.start();
 
 console.log('worked');
 
